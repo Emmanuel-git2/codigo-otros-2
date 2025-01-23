@@ -2,7 +2,7 @@ var formulario = document.querySelector("#form")
 
 formulario.onsubmit = function(e) {
 
-  e.prevent();
+  e.preventDefault(); //faltaba el default()
   
   var n = formulario.elements[0]
   var e = formulario.elements[1]
@@ -81,6 +81,7 @@ elementoLista.appendChild(espacio)
 crearElemento("Nombre", nombre)
 crearElemento("Edad", edad)
 crearElemento("Nacionalidad", nacionalidad)
+
 
 
 var botonBorrar = document.createElement("button")
